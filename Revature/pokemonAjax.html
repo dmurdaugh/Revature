@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title> Pokemon Ajax Examples</title>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="pokemonAJAX.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron text-center">
+				<h1> Gotta Catch em' All AJAX</h1>
+				<span class="label label-success">AJAX: Asynchronous JavaScript and XML</span>
+				<br><br>
+				Enter a Pokemon ID: <input id="pokeID" type="text" placeholder="enter ID" />
+				<br><br>
+				<button id="pokeBtn" class="btn btn-primary">Search For Pokemon</button>
+			</div>
+			<div class="well text-center">
+				<h3 id = "pokemonName"> Pokemon Name</h3>
+				<img id="pokeNormal" src="" alt="">;
+				<img style="-webkit-filter: brightness(0%); filter: brightness(0%);" id="pokePic" src="" alt="">;
+			</div>
+		</div>
+	</body>
+</html>

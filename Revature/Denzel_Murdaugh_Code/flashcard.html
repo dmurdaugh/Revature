@@ -1,0 +1,98 @@
+ <html>
+	<head>
+		<title>
+			Flashcards
+		</title>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="flash.js"></script>
+		<link rel="stylesheet" href="css/flashcard.css"/>
+	</head>
+ <body>
+	<div class="container">
+						<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="home.html">
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+				<i class="glyphicon glyphicon-star"></i>
+			  </a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<li><a href="aboutMe.html">About Me <span class="sr-only">(current)</span></a></li>
+				<li><a href="favoriteWebsites.html">Favorite Websites</a></li>
+				<li class="dropdown active">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Flashcards <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li class="active"><a href="flashcard.html">Subject1</a></li>
+					<li><a href="flashcard2.html">Subject2</a></li>
+					<li><a href="flashcard3.html">Subject3</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			  <form class="navbar-form navbar-left">
+				<div class="form-group">
+				  <input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			  </form>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="login.html">Logout</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!--Container fluid -->
+		</div><!--Container -->
+	</nav>
+
+	</div>
+
+   <center>
+    <h1>
+       Who's That pokemon
+    </h1>
+    <input id="guess" type="text" placeholder="Input Answer"><button id="check">Answer</button>
+	<p id="Correct" style="display: inline; color:green"><b>Correct!</b></p> 
+	<p id="Incorrect" style="display: inline; color:red"> <b>Incorrect!</b></p>
+<div id="f1_container">
+    <div id="f1_card">
+        <div class="face">
+            <br><br>
+            <br><br>
+            <img id="poke_front" alt="pokemon" src="" class="grayscale sprite">
+        </div>
+        <div class="back face">
+			<h2 id="pokemonName"></h2>
+            <img class="sprite" id="poke_back" alt="pokemon" src="">
+        </div>
+    </div>
+</div>
+<button class="btn btn-primary" id="answer">Reveal</button>
+<button class="btn btn-primary" id="question">Question</button>
+<button  class="btn btn-primary" id="next">Next Card</button>
+<button class="btn btn-primary" id="previous">Previous Card</button><br>
+<p class="text-center">
+<button class="btn btn-primary" id="restart">Start Over</button>
+</p>
+</center>
+
+</body>
+</html>

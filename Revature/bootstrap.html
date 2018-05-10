@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<title>Styling with Bootstrap</title>
+		<!-- JQuery CDN -->
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		  crossorigin="anonymous"></script>
+		  
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" type="text/css" href="b_strap.css" />
+	</head>
+	<body>
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">Denzel</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav">
+					<li class="active"><a href="#">Link1 <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Link2</a></li>
+				  </ul>
+				  <ul class="nav navbar-nav navbar-light navbar-right" style="background-color: lightblue">
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+				
+			 
+			</nav>
+			
+			<div class="jumbotron">
+				  <h1>Hello, world!</h1>
+				  <p>...</p>
+				  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+				  <input type="submit" class="btn btn-danger"/>
+			</div>
+				
+			<h1>BootStrap Example</h1>
+			
+			<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+				<div class="row bootstrapRows">
+				  <div class="col-xs-12 col-md-8 bootstrapCols">.col-xs-12 .col-md-8</div>
+				  <div class="col-xs-6 col-md-4 bootstrapCols">.col-xs-6 .col-md-4</div>
+				</div>
+
+				<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+				<div class="row bootstrapRows">
+				  <div class="col-xs-6 col-md-4 bootstrapCols">.col-xs-6 .col-md-4</div>
+				  <div class="col-xs-6 col-md-4 bootstrapCols">.col-xs-6 .col-md-4</div>
+				  <div class="col-xs-6 col-md-4 bootstrapCols">.col-xs-6 .col-md-4</div>
+				</div>
+
+				<!-- Columns are always 50% wide, on mobile and desktop -->
+				<div class="row bootstrapRows">
+				  <div class="col-xs-6 bootstrapCols">.col-xs-6</div>
+				  <div class="col-xs-6 bootstrapCols">.col-xs-6</div>
+				</div>
+				<div class="row bootstrapRows">
+				  <div class="col-md-1 bootstrapCols">1</div>
+				  <div class="col-md-1 bootstrapCols">2</div>
+				  <div class="col-md-1 bootstrapCols">3</div>
+				  <div class="col-md-1 bootstrapCols">4</div>
+				  <div class="col-md-1 bootstrapCols">5</div>
+				  <div class="col-md-1 bootstrapCols">6</div>
+				  <div class="col-md-1 bootstrapCols">7</div>
+				  <div class="col-md-1 bootstrapCols">8</div>
+				  <div class="col-md-1 bootstrapCols">9</div>
+				  <div class="col-md-1 bootstrapCols">10</div>
+				  <div class="col-md-1 bootstrapCols">11</div>
+				  <div class="col-md-1 bootstrapCols">12</div>
+				</div>
+	 </div><!-- /.container-fluid -->	
+	 <div class="row bootstrapRows">
+		<div class="col-xs-8 bootstrapCols"></div>
+		<div class="col-xs-4 bootstrapCols">To the right</div>
+	 </div>
+	<div class="row bootstrapRows">
+		<div class="col-xs-4 col-xs-offset-8 bootstrapCols">To the right in one line (offset)</div>
+	</div>
+	<div class="row bootstrapRows">
+		<div class="col-xs-4 pull-right bootstrapCols"> pull right </div>
+	</div>
+	</body>
+</html>

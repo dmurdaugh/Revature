@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Flash Card Login</title>
+				
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="login.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+
+		<div class="container">
+			<div id="loginForm">
+				<i class="glyphicon glyphicon-log-in"></i>
+				<p id="alert"> Incorrect username/password please try again</p>
+				  <div class="form-group inner-addon left-addon">
+					<!-- <label for="Username">Username</label> -->
+					<i class="glyphicon glyphicon-user"></i>
+					<input type="text" class="form-control" id="Username" placeholder="Username"> 
+				  </div>
+				  <div class="form-group inner-addon left-addon">
+					<!-- <label for="Password">Password</label> -->
+					<i class="glyphicon glyphicon-lock"></i>
+					<input type="password" class="form-control" id="Password" placeholder="Password">
+				  </div>
+				  <div class="checkbox">
+					<label id="remember">
+					  <input type="checkbox"> Remember Me
+					</label>
+					  <span class="psw" style="color: white; margin-left: 20px">Forgot <a href="#">password?</a></span>
+				  </div>
+				  <button type="submit" id="submission" class="btn btn-info">Submit</button><br>
+				  <button id="registration" onclick="document.getElementById('id01').style.display='block'" class="btn btn-success">Register</button>
+			</div>
+			
+		</div>
+		
+		<!-- Button to open the modal login form -->
+
+		<!-- The Modal -->
+		<div id="id01" class="modal">
+		  <span onclick="document.getElementById('id01').style.display='none'" 
+		class="close" title="Close Modal">&times;</span>
+
+		  <!-- Modal Content -->
+		  <form class="modal-content animate">
+			<div class="imgcontainer">
+			  <img src="http://slais-ischool.sites.olt.ubc.ca/files/2016/10/cropped-No-Face-Picture.jpg" alt="Avatar" class="avatar">
+			</div>
+
+			<div class="container">
+			<p id="confirmation" style="color : green">User Registered</p><br>
+			  <label><b>Username</b></label><br>
+			  <input class="modal_input" type="text" placeholder="Enter Username" id="uname" required><br>
+
+			  <label><b>Password</b></label><br>
+			  <input class="modal_input" type="password" placeholder="Enter Password" id="psw" required><br>
+
+			  <label><b>Confirm Password</b></label><br>
+			  <input class="modal_input" type="password" placeholder="Confirm Password" id="pswCheck" required><p id="noMatch">Non-matching password</p><br>
+			  
+			  <button type="submit" id="modalLogin" class="btn btn-success modal-btn">Register</button>
+			</div>
+
+			<div id="cancelContainer" class="container" style="background-color:#f1f1f1">
+			  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger modal-btn">Cancel</button>
+
+			</div>
+		  </form>
+		</div>
+				
+		
+	</body>
+</html>

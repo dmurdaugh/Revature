@@ -1,0 +1,30 @@
+/* faveWeb.css */
+
+body{
+	background-image: url('http://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg');
+	background-size: 1500px 1500px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+h1{
+	color: white;
+}
+table{
+	background-color: white;
+}
+
+#animate{
+	height: 80px;
+	width: 80px;
+}
+
+#spotifyThumbnail{
+	height: 80px;
+	width: 80px;
+}
+.table {
+    width: 78%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-left: 101px;
+}

@@ -1,0 +1,14 @@
+/* BootStrap.css */
+
+.navbar-default{
+	border-color: red;
+}
+
+.bootstrapRows{
+	border: 2px solid black;
+	margin: 5px;
+}
+
+.bootStrapCols{
+	border: 2px solid red;
+}

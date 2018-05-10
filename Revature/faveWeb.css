@@ -1,0 +1,24 @@
+/* faveWeb.css */
+
+body{
+	background-image: url("http://smashingyolo.com/wp-content/uploads/2014/05/Best-Website-Background-Images4.jpg");
+	background-size: 1500px 1500px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+h1{
+	color: white;
+}
+table{
+	background-color: white;
+}
+
+#animate{
+	height: 80px;
+	width: 80px;
+}
+
+#spotifyThumbnail{
+	height: 80px;
+	width: 80px;
+}

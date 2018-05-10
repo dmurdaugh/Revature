@@ -1,0 +1,27 @@
+/* Style.css for Login page */
+
+form{
+    border: 2px solid black;
+	border-radius: 25px;
+    width: 265px;
+    background-color: white;
+    position: relative;
+    bottom: -150px;
+    left: 244px;
+}
+html{
+	background-image: url("download.jpg");
+	background-size: 800px 600px;
+	background-repeat: no-repeat;
+}
+
+#submitButton{
+	position: relative;
+	left: 105px;
+}
+#header{
+	/* background-color: white; */
+	/* width: 30%; */
+	/* text-align: center; */
+}
+

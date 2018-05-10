@@ -1,0 +1,57 @@
+/*  Style.css for out styledPage.html */
+
+/* # = selector for id attributes */
+
+/* html element is the root element of HTML docs */
+body{
+	font-size: 20px
+}
+#redstuff{
+	color: red
+}
+#bluestuff1{
+	color: darkblue
+}
+#bluestuff2{
+	width: 50%;
+    height: 175px;
+    color: lightblue;
+    border: 2px solid black;
+    background-image: url(download.jpg);
+	text-decoration: none;
+}
+
+#insideb{
+	color: white;
+    background-color: blue;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid red;
+}
+
+#empty{
+	width:50%;
+	height:100px;
+}
+/* . = selector for the class attributes */
+.bluestuff{
+	color: black
+}
+
+/* element name = selector for any html element */
+div{
+	color: purple
+}
+
+li a{
+	text-decoration: none;
+}
+
+ul{
+	list-style:none;
+}
+
+.navbar{
+	display: inline-block;
+	margin: 10px;
+}
